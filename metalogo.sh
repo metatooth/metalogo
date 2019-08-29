@@ -237,12 +237,12 @@ cat << EOF
 <svg height="$height" width="$width">
   <!-- Copyright Meta Tooth LLC 2019. -->
   <rect height="$height" width="$width" style="fill-opacity:0"/>
-  <circle r="$radius" cx="$center_x" cy="$center_y" fill="#$primary"/>
-  <polygon points="$ax,$ay $ox,$oy $kx,$ky" fill="#$secondary"/>
-  <polygon points="$dx,$dy $fx,$fy $mx,$my" fill="#$primary"/>
-  <polygon points="$bx,$by $cx,$cy $ex,$ey" fill="#$primary"/>
-  <polygon points="$gx,$gy $hx,$hy $lx,$ly" fill="#$primary"/>
-  <polygon points="$ix,$iy $jx,$jy $nx,$ny" fill="#$primary"/>
-  <polygon points="$hx,$hy $ix,$iy $ex,$ey" fill="#$secondary"/>
+  <circle r="$radius" cx="$center_x" cy="$center_y" fill="$primary"/>
+  <polygon points="$ax,$ay $ox,$oy $kx,$ky" fill="$secondary"/>
+  <polygon points="$dx,$dy $fx,$fy $mx,$my" fill="$primary"/>
+  <polygon points="$bx,$by $cx,$cy $ex,$ey" fill="$primary"/>
+  <polygon points="$gx,$gy $hx,$hy $lx,$ly" fill="$primary"/>
+  <polygon points="$ix,$iy $jx,$jy $nx,$ny" fill="$primary"/>
+  <polygon points="$hx,$hy $ix,$iy $ex,$ey" fill="$secondary"/>
 </svg>
 EOF
