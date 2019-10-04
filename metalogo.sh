@@ -12,7 +12,7 @@ then
     echo "  circle of <radius>*<ratio>. Then rotate the triangle by <theta>."
     echo "  Use <primary> and <secondary> colors."
     echo
-    echo "  for example, metalogo.sh 256 0.8 15 black white"
+    echo "  for example, metalogo.sh 256 0.8 15 000000 ffffff"
     exit
 fi
 
