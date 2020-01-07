@@ -5,7 +5,7 @@ if [ $# -ne 3 ]
 then
     echo "usage: logotype.sh [color] [hex] [font]"
     echo
-    echo "  Makes the Meta Tooth LLC logotype."
+    echo "  Makes the Metatooth LLC logotype."
     exit
 fi
 
