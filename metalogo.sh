@@ -236,8 +236,8 @@ width=`echo "2*$radius" | bc -l`
 cat << EOF
 <svg height="$height" width="$width">
   <!-- Copyright Metatooth LLC 2019. -->
-  <rect height="$height" width="$width" style="fill-opacity:0"/>
-  <circle r="$radius" cx="$center_x" cy="$center_y" style="fill:#$primary;stroke=#$primary"/>
+  <rect height="$height" width="$width" style="fill:#$secondary;stroke:#$secondary;"/>
+  <circle r="$radius" cx="$center_x" cy="$center_y" style="fill:#$primary;stroke-width=0"/>
   <polygon points="$ax,$ay $ox,$oy $kx,$ky" style="fill:#$secondary;stroke=#secondary"/>
   <polygon points="$dx,$dy $fx,$fy $mx,$my" style="fill:#$primary;stroke=#$primary"/>
   <polygon points="$bx,$by $cx,$cy $ex,$ey" style="fill:#$primary;stroke=#$primary"/>

@@ -1,31 +1,29 @@
 #!/bin/bash
 
 
-if [ $# -ne 3 ]
+if [ $# -ne 2 ]
 then
-    echo "usage: logotype.sh [color] [hex] [font]"
+    echo "usage: logotype.sh [color] [font]"
     echo
     echo "  Makes the Metatooth LLC logotype."
     exit
 fi
 
 color=$1
-hex=$2
-font=$3
+font=$2
 
-./metalogo.sh 75 0.95 45 $hex ffffff > logo.svg
+#./metalogo.sh 65 0.95 45 ${color:1} ffffff > logo.svg
 
-convert logo.svg logo.png
+#convert logo.svg -background none logo.png
 
-convert -fill $color -stroke $color -font $font-Regular -pointsize 200 label:Meta meta.png
-convert -fill $color -stroke $color -font $font-Bold -pointsize 200 label:tooth tooth.png
+convert -fill $color -stroke $color -font $font-Regular -pointsize 200 label:Metatooth metatooth.png
 
-convert -size 50x80 canvas:white spacer.png
+convert -size 50x202 canvas:white spacer.png
 
-convert -size 75x80 canvas:white top.png
+convert -size 130x17 canvas:white top.png
 
 convert -append top.png logo.png padded-logo.png
 
-convert +append spacer.png meta.png tooth.png padded-logo.png spacer.png temp.png
+convert +append spacer.png metatooth.png padded-logo.png spacer.png temp.png
 
 convert temp.png -transparent white metatooth.png
