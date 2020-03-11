@@ -12,9 +12,9 @@ fi
 color=$1
 font=$2
 
-#./metalogo.sh 65 0.95 45 ${color:1} ffffff > logo.svg
+./metalogo.sh 65 0.95 45 ${color:1} ffffff > logo.svg
 
-#convert logo.svg -background none logo.png
+convert logo.svg -background none logo.png
 
 convert -fill $color -stroke $color -font $font-Regular -pointsize 200 label:Metatooth metatooth.png
 
