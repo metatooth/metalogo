@@ -1,4 +1,4 @@
-\#!/bin/bash
+#!/bin/bash
 
 pi=`echo "4*a(1)" | bc -l`
 rad=`echo "60*($pi/180)" | bc -l`
