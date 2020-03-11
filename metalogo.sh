@@ -1,4 +1,4 @@
-#!/bin/bash
+\#!/bin/bash
 
 pi=`echo "4*a(1)" | bc -l`
 rad=`echo "60*($pi/180)" | bc -l`
@@ -12,7 +12,7 @@ then
     echo "  circle of <radius>*<ratio>. Then rotate the triangle by <theta>."
     echo "  Use <primary> and <secondary> colors."
     echo
-    echo "  for example, metalogo.sh 256 0.8 15 000000 ffffff"
+    echo "  for example, metalogo.sh 256 0.95 45 000000 ffffff"
     exit
 fi
 
