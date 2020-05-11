@@ -16,7 +16,7 @@ font=$2
 
 convert logo.svg -background none logo.png
 
-convert -fill $color -stroke $color -font $font-Regular -pointsize 200 label:Metatooth metatooth.png
+convert -fill $color -stroke $color -font $font -pointsize 200 label:Metatooth metatooth.png
 
 convert -size 50x202 canvas:white spacer.png
 
