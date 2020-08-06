@@ -235,14 +235,14 @@ width=`echo "2*$radius" | bc -l`
 
 cat << EOF
 <svg height="$height" width="$width">
-  <!-- Copyright Metatooth LLC 2019. -->
-  <rect height="$height" width="$width" style="fill:#$secondary;stroke:#$secondary;"/>
-  <circle r="$radius" cx="$center_x" cy="$center_y" style="fill:#$primary;stroke-width=0"/>
-  <polygon points="$ax,$ay $ox,$oy $kx,$ky" style="fill:#$secondary;stroke=#secondary"/>
-  <polygon points="$dx,$dy $fx,$fy $mx,$my" style="fill:#$primary;stroke=#$primary"/>
-  <polygon points="$bx,$by $cx,$cy $ex,$ey" style="fill:#$primary;stroke=#$primary"/>
-  <polygon points="$gx,$gy $hx,$hy $lx,$ly" style="fill:#$primary;stroke=#$primary"/>
-  <polygon points="$ix,$iy $jx,$jy $nx,$ny" style="fill:#$primary;stroke=#$primary"/>
-  <polygon points="$hx,$hy $ix,$iy $ex,$ey" style="fill:#$secondary;stroke=#$secondary"/>
+  <!-- Copyright Metatooth LLC 2020. -->
+  <rect height="$height" width="$width" style="fill:#$secondary;stroke-width=1;stroke=#$secondary"/>
+  <circle r="$radius" cx="$center_x" cy="$center_y" style="fill:#$primary;stroke-width=1;stroke=#$primary"/>
+  <polygon points="$ax,$ay $ox,$oy $kx,$ky" style="fill:#$secondary;stroke-width=1;stroke=#$secondary"/>
+  <polygon points="$dx,$dy $fx,$fy $mx,$my" style="fill:#$primary;stroke-width=1;stroke=#$primary"/>
+  <polygon points="$bx,$by $cx,$cy $ex,$ey" style="fill:#$primary;stroke-width=1;stroke=#$primary"/>
+  <polygon points="$gx,$gy $hx,$hy $lx,$ly" style="fill:#$primary;stroke-width=1;stroke=#$primary"/>
+  <polygon points="$ix,$iy $jx,$jy $nx,$ny" style="fill:#$primary;stroke-width=1;stroke=#$primary"/>
+  <polygon points="$hx,$hy $ix,$iy $ex,$ey" style="fill:#$secondary;stroke-width=1;stroke=#$secondary"/>
 </svg>
 EOF

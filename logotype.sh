@@ -6,6 +6,8 @@ then
     echo "usage: logotype.sh [color] [font]"
     echo
     echo "  Makes the Metatooth LLC logotype."
+    echo
+    echo "  for example, logotype.sh \#ff33bb EB-Garamond-08-Regular"
     exit
 fi
 
@@ -14,7 +16,7 @@ font=$2
 
 ./metalogo.sh 65 0.95 45 ${color:1} ffffff > logo.svg
 
-convert logo.svg -background none logo.png
+#convert -background white logo.svg logo.png
 
 convert -fill $color -stroke $color -font $font -pointsize 200 label:Metatooth metatooth.png
 
