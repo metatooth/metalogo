@@ -8,7 +8,9 @@ Generates the Metatooth logo.
 
 #### Ubuntu 18.04 LTS
 
+```
 $ sudo apt install cmake imagemagick
+```
 
 ### Install
 
