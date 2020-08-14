@@ -1,6 +1,6 @@
-# Meta**logo**
+# Metalogo
 
-Automates the calling of a BASH script to produce the Meta**tooth** logo.
+Generates the Metatooth logo.
 
 ## Getting Started
 
@@ -8,12 +8,12 @@ Automates the calling of a BASH script to produce the Meta**tooth** logo.
 
 #### Ubuntu 18.04 LTS
 
-Use it!
+$ sudo apt install cmake imagemagick
 
 ### Install
 
 ```
-$ git clone https://bitbucket.org/metatooth/metalogo
+$ git clone https://github.com/metatooth/metalogo.git
 $ cd metalogo
 $ cmake -H. -B_builds
 $ cmake --build _builds
@@ -33,7 +33,7 @@ $ cmake --build _builds
 
 ## License
 
-Copyright 2019 Meta Tooth LLC
+Copyright 2020 Metatooth LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
